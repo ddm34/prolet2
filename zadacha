@@ -1,0 +1,119 @@
+package dm1;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+
+public class prolet extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					prolet frame = new prolet();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public prolet() {
+		setTitle("\u041F\u0440\u043E\u043B\u0435\u0442");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 683, 499);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(204, 255, 204));
+		contentPane.setForeground(new Color(204, 255, 204));
+		contentPane.setToolTipText("");
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lbl1 = new JLabel("");
+		lbl1.setHorizontalAlignment(SwingConstants.CENTER);
+		lbl1.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lbl1.setBounds(21, 176, 625, 88);
+		contentPane.add(lbl1);
+		
+		JButton btn1 = new JButton("");
+		btn1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lbl1.setText(" Желая ти свежестта на пролетта и красотата на цветята!");
+			}
+		});
+		btn1.setIcon(new ImageIcon("C:\\Users\\IlianaMladenova\\Pictures\\download1.jpg"));
+		btn1.setBounds(24, 39, 140, 109);
+		contentPane.add(btn1);
+		
+		JButton btn2 = new JButton("");
+		btn2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			lbl1.setText("Нека в радостта си да имаш често нови успехи!");
+			}
+		});
+		btn2.setIcon(new ImageIcon("C:\\Users\\IlianaMladenova\\Pictures\\eley78gq6vfa1sb8qn3u.jpg"));
+		btn2.setBounds(251, 39, 162, 109);
+		contentPane.add(btn2);
+		
+		JButton btn3 = new JButton("");
+		btn3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lbl1.setText("Пролетта ти плаща много поздрави и ти пожелава много светлина, мир и спокойствие!");
+			}
+		});
+		btn3.setIcon(new ImageIcon("C:\\Users\\IlianaMladenova\\Pictures\\big_06abb998f3181af0372fad5b173032c3.jpg"));
+		btn3.setBounds(484, 39, 162, 107);
+		contentPane.add(btn3);
+		
+		JButton btn4 = new JButton("");
+		btn4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lbl1.setText("Тази пролет те очаква много изненади, вълнуващи моменти и куп забавления.");
+			}
+		});
+		btn4.setIcon(new ImageIcon("C:\\Users\\IlianaMladenova\\Pictures\\b211aa3c765c2bf012d53161fe99e639.jpg"));
+		btn4.setBounds(21, 304, 143, 114);
+		contentPane.add(btn4);
+		
+		JButton btn5 = new JButton("");
+		btn5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lbl1.setText("Много радости, любов и приключения нека запълват твоите слънчеви дни!");
+			}
+		});
+		btn5.setIcon(new ImageIcon("C:\\Users\\IlianaMladenova\\Pictures\\spring-nature-spring-flowers-flowers-thumb.jpg"));
+		btn5.setBounds(251, 308, 162, 110);
+		contentPane.add(btn5);
+		
+		JButton btn6 = new JButton("");
+		btn6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lbl1.setText("Колкото цъфнали дръвчета днес видиш, толкова сбъднати желания нека имаш.");
+			}
+		});
+		btn6.setIcon(new ImageIcon("C:\\Users\\IlianaMladenova\\Pictures\\proletni-cvetq.jpg"));
+		btn6.setBounds(488, 304, 158, 114);
+		contentPane.add(btn6);
+	}
+}
